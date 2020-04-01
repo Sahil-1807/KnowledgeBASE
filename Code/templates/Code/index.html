@@ -1,0 +1,175 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en-US"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <!-- META TAGS -->
+                
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <title>Knowledge Base</title>
+
+
+                <!-- Google Web Fonts-->
+                <link href="{% static 'Code/css'%}" rel="stylesheet" type="text/css">
+                <link href="{% static 'Code/css(1)'%}" rel="stylesheet" type="text/css">
+                <link href="{% static 'Code/css(2)'%}" rel="stylesheet" type="text/css">
+
+                <!-- Style Sheet-->
+                <link rel="stylesheet" href="{% static 'Code/style.css'%}">
+                <link rel="stylesheet" id="bootstrap-css-css" href="{% static 'Code/bootstrap.css'%}" type="text/css" media="all">
+                <link rel="stylesheet" id="responsive-css-css" href="{% static 'Code/responsive.css'%}" type="text/css" media="all">
+                <link rel="stylesheet" id="main-css-css" href="{% static 'Code/main.css'%}" type="text/css" media="all">
+                <link rel="stylesheet" id="blue-skin-css" href="{% static 'Code/blue-skin.css'%}" type="text/css" media="all">
+                <link rel="stylesheet" id="custom-css-css" href="{% static 'Code/custom.css'%}" type="text/css" media="all">
+
+        <script type="text/javascript" src="{% static 'Code/353252568291504128'%}"></script></head>
+
+        <body data-gr-c-s-loaded="true">
+
+                <!-- Start of Header -->
+                <div class="header-wrapper">
+                        <header>
+                                <div class="container">
+
+
+                                        <div class="logo-container">
+                                                <a href="/" title="Knowledge Base Theme">
+                                                        <img src="{% static 'Code/logo.png'%}" alt="Knowledge Base Theme">
+                                                </a>
+                                        </div>
+
+                                        <nav class="main-nav">
+                                                <div class="menu-top-menu-container">
+                                                        <ul id="menu-top-menu" class="clearfix">
+                                                                <li><a href="">Total Question: {{total}}</a></li>
+                                                                <li><a href="">Days Left: {{days}}</a></li>
+                                                                <li><a href="https://algoexpert.io/" target="_blank">Algoexpert</a></li>
+                                                                <li><a href="https://practice.geeksforgeeks.org/explore/?company%5B%5D=Amazon&problemType=functional&page=1&sortBy=submissions" target="_blank">G4G Practice</a></li>
+                                                                <li><a href="https://practice.geeksforgeeks.org/batch/gc-summers-2/" target="_blank">GCS-2</a></li>
+                                                                <li><a href="http://github.com/" target="_blank">Github</a></li>
+                                                        </ul>
+                                                </div><select class="responsive-nav"><option value="" selected="">Go to...</option><option value="index.html"> Home</option><option value="home-categories-description.html"> Home 2</option><option value="home-categories-articles.html"> Home 3</option><option value="articles-list.html"> Articles List</option><option value="faq.html"> FAQs</option><option value="#"> Skins</option><option value="blue-skin.html"> -  Blue Skin</option><option value="green-skin.html"> -  Green Skin</option><option value="red-skin.html"> -  Red Skin</option><option value="index.html"> -  Default Skin</option><option value="#"> More</option><option value="full-width.html"> -  Full Width</option><option value="elements.html"> -  Elements</option><option value="page.html"> -  Sample Page</option><option value="contact.html"> Contact</option></select>
+                                        </nav>
+                                </div>
+                        </header>
+                </div>
+                <!-- End of Header -->
+
+                <!-- Start of Search Wrapper -->
+                <div class="search-area-wrapper">
+                        <div class="search-area container">
+                                <h3 class="search-header">Want to refresh some Questions?</h3>
+                                <p class="search-tag-line">You can search those questions here, think of those keywords in Question!</p>
+
+                                <form id="search-form" class="search-form clearfix" method="get" action="http://html.inspirydemos.com/knowledgebase-html/blue-skin.html#" autocomplete="off" novalidate="novalidate">
+                                        <input class="search-term required" type="text" id="s" name="s" placeholder="Type your search terms here" title="* Please enter a search term!" autocomplete="off">
+                                        <input class="search-btn" type="submit" value="Search">
+                                        <div id="search-error-container"></div>
+                                </form>
+                        </div>
+                </div>
+                <!-- End of Search Wrapper -->
+
+                <!-- Start of Page Container -->
+                <div class="page-container">
+                        <div class="container">
+                                <div class="row">
+                                        <div class="span8 page-content">
+                                                <div class="row separator">
+                                                        <section class="span4 articles-list">
+                                                                <h3>Important Problems</h3>
+                                                                <ul class="articles">
+                                                                    {%for problem in problems%}
+                                                                        <li class="article-entry standard">
+                                                                                <h4><a href="/detail/{{problem.id}}/">{{problem.name}}</a></h4>
+                                                                                <span class="article-meta">{{problem.date}} in <a href="http://html.inspirydemos.com/knowledgebase-html/blue-skin.html#" title="View all posts in Server &amp; Database">{{problem.category}}</a></span>
+                                                                                <!-- <span class="like-count">66</span> -->
+                                                                        </li>
+                                                                    {%endfor%}
+                                                                </ul>
+                                                        </section>
+
+
+                                                        <section class="span4 articles-list">
+                                                                <h3>Easy Problems</h3>
+                                                                <ul class="articles">
+                                                                    {%for problem in problems%}
+                                                                        <li class="article-entry standard">
+                                                                                <h4><a href="/detail/{{problem.id}}/">{{problem.name}}</a></h4>
+                                                                                <span class="article-meta">{{problem.date}} in <a href="/category/{{problem.category.id}}" title="View all posts in Server &amp; Database">{{problem.category}}</a></span>
+                                                                                <!-- <span class="like-count">66</span> -->
+                                                                        </li>
+                                                                    {%endfor%}
+                                                                </ul>
+                                                        </section>
+                                                </div>
+                                        </div>
+                                        <!-- end of page content -->
+
+
+                                        <!-- start of sidebar -->
+                                        <aside class="span4 page-sidebar">
+
+                                                <section class="widget">
+                                                        <div class="support-widget">
+                                                                <h3 class="title">Motivation</h3>
+                                                                <p class="intro">Don't worry, just keep doing. It will definitely take a lot of time!!!</p>
+                                                        </div>
+                                                </section>
+
+                                                <section class="widget">
+                                                        <h3 class="title">Filter</h3>
+                                                        <div class="tagcloud">
+                                                            {%for data in filters%}
+                                                                <a href="/category/{{data.id}}" class="btn btn-mini">{{data}}</a>
+                                                            {%endfor%}
+                                                        </div>
+                                                </section>
+                                                <section class="widget">
+                                                        <h3 class="title">Filter</h3>
+                                                        <div class="tagcloud">
+                                                            {%for data in tags%}
+                                                                <a href="/tag/{{data.id}}" class="btn btn-mini">{{data}}</a>
+                                                            {%endfor%}
+                                                        </div>
+                                                </section>
+
+                                        </aside>
+                                </div>
+                        </div>
+                </div>
+                <!-- End of Page Container -->
+
+                        <!-- Footer Bottom -->
+                        <div id="footer-bottom-wrapper">
+                                <div id="footer-bottom" class="container">
+                                        <div class="row">
+                                                <div class="span6">
+                                                        <p class="copyright">
+                                                                Copyright © 2020. All Rights Reserved by Roshan Pandey.
+                                                        </p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- End of Footer Bottom -->
+
+                </footer>
+                <!-- End of Footer -->
+
+                <!-- script -->
+                <script type="text/javascript" src="{% static 'Code/jquery-1.8.3.min.js'%}"></script>
+                <script type="text/javascript" src="{% static 'Code/jquery.easing.1.3.js'%}"></script>
+                <script type="text/javascript" src="{% static 'Code/jquery.prettyPhoto.js'%}"></script>
+                <script type="text/javascript" src="{% static 'Code/jquery.liveSearch.js'%}"></script>
+				<script type="text/javascript" src="{% static 'Code/jflickrfeed.js'%}"></script>
+                <script type="text/javascript" src="{% static 'Code/jquery.form.js'%}"></script>
+                <script type="text/javascript" src="{% static 'Code/jquery.validate.min.js'%}"></script>
+                <script type="text/javascript" src="{% static 'Code/jquery-twitterFetcher.js'%}"></script>
+                <script type="text/javascript" src="{% static 'Code/custom.js'%}"></script>
+
+        
+
+
+
+
+<div id="jquery-live-search" style="display: none;"></div></body></html>

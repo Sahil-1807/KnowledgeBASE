@@ -1,0 +1,155 @@
+Watching for file changes with StatReloader
+  File "manage.py", line 16
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+  File "manage.py", line 16
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+  File "manage.py", line 16
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+  File "manage.py", line 16
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+Watching for file changes with StatReloader
+[01/Apr/2020 14:03:28] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:03:28] "GET /static/Code/custom.css HTTP/1.1" 404 1671
+[01/Apr/2020 14:03:29] "GET /static/images/support.png HTTP/1.1" 404 1680
+[01/Apr/2020 14:03:29] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1704
+[01/Apr/2020 14:03:43] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:03:43] "GET /static/Code/custom.css HTTP/1.1" 404 1671
+[01/Apr/2020 14:03:44] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1704
+[01/Apr/2020 14:03:44] "GET /static/images/support.png HTTP/1.1" 404 1680
+[01/Apr/2020 14:03:44] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:03:44] "GET /static/Code/custom.css HTTP/1.1" 404 1671
+[01/Apr/2020 14:03:52] "GET /admin/ HTTP/1.1" 200 8244
+[01/Apr/2020 14:03:52] "GET /admin/ HTTP/1.1" 200 8244
+[01/Apr/2020 14:15:04] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:15:04] "GET /static/Code/custom.css HTTP/1.1" 404 1671
+[01/Apr/2020 14:15:04] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1704
+[01/Apr/2020 14:15:04] "GET /static/images/support.png HTTP/1.1" 404 1680
+[01/Apr/2020 14:15:21] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:15:21] "GET /static/Code/css HTTP/1.1" 200 24963
+[01/Apr/2020 14:15:21] "GET /static/Code/style.css HTTP/1.1" 200 664
+[01/Apr/2020 14:15:21] "GET /static/Code/css(2) HTTP/1.1" 200 1761
+[01/Apr/2020 14:15:21] "GET /static/Code/css(1) HTTP/1.1" 200 3778
+[01/Apr/2020 14:15:21] "GET /static/Code/custom.css HTTP/1.1" 404 1674
+[01/Apr/2020 14:15:21] "GET /static/Code/353252568291504128 HTTP/1.1" 200 0
+[01/Apr/2020 14:15:21] "GET /static/Code/blue-skin.css HTTP/1.1" 200 2440
+[01/Apr/2020 14:15:21] "GET /static/Code/main.css HTTP/1.1" 200 29605
+[01/Apr/2020 14:15:21] "GET /static/Code/responsive.css HTTP/1.1" 200 20373
+[01/Apr/2020 14:15:21] "GET /static/Code/bootstrap.css HTTP/1.1" 200 122941
+[01/Apr/2020 14:15:21] "GET /static/Code/logo.png HTTP/1.1" 200 2081
+[01/Apr/2020 14:15:21] "GET /static/Code/jquery-1.8.3.min.js HTTP/1.1" 200 93636
+[01/Apr/2020 14:15:21] "GET /static/Code/jflickrfeed.js HTTP/1.1" 200 2330
+[01/Apr/2020 14:15:21] "GET /static/Code/jquery.easing.1.3.js HTTP/1.1" 200 8097
+[01/Apr/2020 14:15:21] "GET /static/Code/jquery.liveSearch.js HTTP/1.1" 200 4063
+[01/Apr/2020 14:15:21] "GET /static/Code/jquery.prettyPhoto.js HTTP/1.1" 200 25232
+[01/Apr/2020 14:15:21] "GET /static/Code/jquery.form.js HTTP/1.1" 200 28151
+[01/Apr/2020 14:15:21] "GET /static/Code/jquery.validate.min.js HTTP/1.1" 200 21601
+[01/Apr/2020 14:15:21] "GET /static/Code/jquery-twitterFetcher.js HTTP/1.1" 200 3874
+[01/Apr/2020 14:15:21] "GET /static/Code/custom.js HTTP/1.1" 200 12341
+[01/Apr/2020 14:15:21] "GET /static/images/support.png HTTP/1.1" 404 1683
+[01/Apr/2020 14:15:21] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1707
+Not Found: /favicon.ico
+[01/Apr/2020 14:15:22] "GET /favicon.ico HTTP/1.1" 404 2496
+[01/Apr/2020 14:20:31] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:20:31] "GET /static/Code/css(1) HTTP/1.1" 200 3778
+[01/Apr/2020 14:20:31] "GET /static/Code/css HTTP/1.1" 200 24963
+[01/Apr/2020 14:20:31] "GET /static/Code/blue-skin.css HTTP/1.1" 200 2440
+[01/Apr/2020 14:20:31] "GET /static/Code/style.css HTTP/1.1" 200 664
+[01/Apr/2020 14:20:31] "GET /static/Code/css(2) HTTP/1.1" 200 1761
+[01/Apr/2020 14:20:31] "GET /static/Code/responsive.css HTTP/1.1" 200 20373
+[01/Apr/2020 14:20:31] "GET /static/Code/main.css HTTP/1.1" 200 29605
+[01/Apr/2020 14:20:31] "GET /static/Code/353252568291504128 HTTP/1.1" 200 0
+[01/Apr/2020 14:20:31] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:20:31] "GET /static/Code/bootstrap.css HTTP/1.1" 200 122941
+[01/Apr/2020 14:20:31] "GET /static/Code/logo.png HTTP/1.1" 200 2081
+[01/Apr/2020 14:20:31] "GET /static/Code/jquery-1.8.3.min.js HTTP/1.1" 200 93636
+[01/Apr/2020 14:20:31] "GET /static/Code/jquery.liveSearch.js HTTP/1.1" 200 4063
+[01/Apr/2020 14:20:31] "GET /static/Code/jquery.easing.1.3.js HTTP/1.1" 200 8097
+[01/Apr/2020 14:20:31] "GET /static/Code/jflickrfeed.js HTTP/1.1" 200 2330
+[01/Apr/2020 14:20:31] "GET /static/Code/jquery.prettyPhoto.js HTTP/1.1" 200 25232
+[01/Apr/2020 14:20:31] "GET /static/Code/jquery.form.js HTTP/1.1" 200 28151
+[01/Apr/2020 14:20:31] "GET /static/Code/jquery.validate.min.js HTTP/1.1" 200 21601
+[01/Apr/2020 14:20:31] "GET /static/Code/custom.js HTTP/1.1" 200 12341
+[01/Apr/2020 14:20:31] "GET /static/Code/jquery-twitterFetcher.js HTTP/1.1" 200 3874
+[01/Apr/2020 14:20:31] "GET /static/images/support.png HTTP/1.1" 404 1677
+[01/Apr/2020 14:20:31] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+Not Found: /favicon.ico
+[01/Apr/2020 14:20:34] "GET /favicon.ico HTTP/1.1" 404 2490
+[01/Apr/2020 14:30:41] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:30:41] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:30:42] "GET /static/images/support.png HTTP/1.1" 404 1677
+[01/Apr/2020 14:30:42] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+[01/Apr/2020 14:35:01] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:35:01] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:35:01] "GET /static/images/support.png HTTP/1.1" 404 1677
+[01/Apr/2020 14:35:01] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+[01/Apr/2020 14:35:25] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:35:25] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:35:25] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+[01/Apr/2020 14:35:25] "GET /static/images/support.png HTTP/1.1" 404 1677
+[01/Apr/2020 14:35:34] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:35:34] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:35:34] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+[01/Apr/2020 14:35:34] "GET /static/images/support.png HTTP/1.1" 404 1677
+[01/Apr/2020 14:41:33] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:41:33] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:41:33] "GET /static/images/support.png HTTP/1.1" 404 1677
+[01/Apr/2020 14:41:33] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+[01/Apr/2020 14:42:32] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:42:33] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:42:33] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+[01/Apr/2020 14:42:33] "GET /static/images/support.png HTTP/1.1" 404 1677
+[01/Apr/2020 14:46:57] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:46:57] "GET /static/Code/css HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/css(1) HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/css(2) HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/style.css HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/blue-skin.css HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/custom.css HTTP/1.1" 404 1671
+[01/Apr/2020 14:46:57] "GET /static/Code/bootstrap.css HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/responsive.css HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/main.css HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/jquery-1.8.3.min.js HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/logo.png HTTP/1.1" 304 0
+[01/Apr/2020 14:46:57] "GET /static/Code/353252568291504128 HTTP/1.1" 304 0
+[01/Apr/2020 14:46:58] "GET /static/Code/jquery.easing.1.3.js HTTP/1.1" 304 0
+[01/Apr/2020 14:46:58] "GET /static/Code/jquery.liveSearch.js HTTP/1.1" 304 0
+[01/Apr/2020 14:46:58] "GET /static/Code/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[01/Apr/2020 14:46:58] "GET /static/Code/jflickrfeed.js HTTP/1.1" 304 0
+[01/Apr/2020 14:46:58] "GET /static/Code/jquery.form.js HTTP/1.1" 304 0
+[01/Apr/2020 14:46:58] "GET /static/Code/jquery.validate.min.js HTTP/1.1" 304 0
+[01/Apr/2020 14:46:58] "GET /static/Code/custom.js HTTP/1.1" 304 0
+[01/Apr/2020 14:46:58] "GET /static/Code/jquery-twitterFetcher.js HTTP/1.1" 304 0
+[01/Apr/2020 14:46:58] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1704
+[01/Apr/2020 14:46:58] "GET /static/images/support.png HTTP/1.1" 404 1680
+[01/Apr/2020 14:47:00] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:47:00] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:47:00] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+[01/Apr/2020 14:47:00] "GET /static/images/support.png HTTP/1.1" 404 1677
+[01/Apr/2020 14:48:48] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:48:48] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:48:48] "GET /static/images/support.png HTTP/1.1" 404 1677
+[01/Apr/2020 14:48:48] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+[01/Apr/2020 14:48:53] "GET / HTTP/1.1" 200 12644
+[01/Apr/2020 14:48:53] "GET /static/Code/custom.css HTTP/1.1" 404 1668
+[01/Apr/2020 14:48:53] "GET /static/Code/blue-skin/blue-bg.jpg HTTP/1.1" 404 1701
+[01/Apr/2020 14:48:53] "GET /static/images/support.png HTTP/1.1" 404 1677
+  File "manage.py", line 16
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+  File "manage.py", line 16
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+  File "manage.py", line 16
+    ) from exc
+         ^
+SyntaxError: invalid syntax
