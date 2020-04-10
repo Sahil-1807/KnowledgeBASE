@@ -55,7 +55,7 @@
                 <!-- End of Header -->
 
                 <!-- Start of Search Wrapper -->
-                <div class="search-area-wrapper">
+                <!-- <div class="search-area-wrapper">
                         <div class="search-area container">
                                 <h3 class="search-header">Want to refresh some Questions?</h3>
                                 <p class="search-tag-line">You can search those questions here, think of those keywords in Question!</p>
@@ -66,7 +66,7 @@
                                         <div id="search-error-container"></div>
                                 </form>
                         </div>
-                </div>
+                </div> -->
                 <!-- End of Search Wrapper -->
 
                 <!-- Start of Page Container -->
@@ -76,9 +76,9 @@
                                         <div class="span8 page-content">
                                                 <div class="row separator">
                                                         <section class="span4 articles-list">
-                                                                <h3>Important Problems</h3>
+                                                                <h3>Older First</h3>
                                                                 <ul class="articles">
-                                                                    {%for problem in problems%}
+                                                                    {%for problem in old_problems%}
                                                                         <li class="article-entry standard">
                                                                                 <h4><a href="/detail/{{problem.id}}/">{{problem.name}}</a></h4>
                                                                                 <span class="article-meta">{{problem.date}} in <a href="http://html.inspirydemos.com/knowledgebase-html/blue-skin.html#" title="View all posts in Server &amp; Database">{{problem.category}}</a></span>
@@ -90,9 +90,9 @@
 
 
                                                         <section class="span4 articles-list">
-                                                                <h3>Easy Problems</h3>
+                                                                <h3>Newer first</h3>
                                                                 <ul class="articles">
-                                                                    {%for problem in problems%}
+                                                                    {%for problem in new_problems%}
                                                                         <li class="article-entry standard">
                                                                                 <h4><a href="/detail/{{problem.id}}/">{{problem.name}}</a></h4>
                                                                                 <span class="article-meta">{{problem.date}} in <a href="/category/{{problem.category.id}}" title="View all posts in Server &amp; Database">{{problem.category}}</a></span>
@@ -111,8 +111,13 @@
 
                                                 <section class="widget">
                                                         <div class="support-widget">
-                                                                <h3 class="title">Motivation</h3>
-                                                                <p class="intro">Don't worry, just keep doing. It will definitely take a lot of time!!!</p>
+                                                                <h3 class="title">Things to do</h3>
+                                                                <ul>
+                                                                        <li>&#x27F4; 2 Hours Aptitude</li>
+                                                                        <li>&#x27F4; 2 Amazon Question</li>
+                                                                        <li>&#x27F4; 3 Must Do Questions</li>
+                                                                        <li>&#x27F4; 2 Algoexpert Questions </li>
+                                                                </ul>
                                                         </div>
                                                 </section>
 

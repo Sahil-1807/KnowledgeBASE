@@ -85,3 +85,40 @@ class Dates(models.Model):
     class Meta:
         verbose_name = 'Dates'
         verbose_name_plural = 'Dates'
+
+class ResourcesList(models.Model):
+    note = models.CharField('Note',max_length=300)
+    url = models.URLField('URL',max_length=5000)
+
+    def __str__(self):
+        return self.note
+    
+    class Meta:
+        verbose_name = 'My Resources'
+        verbose_name_plural = 'My Resources'
+
+class WeekSet(models.Model):
+    name = models.CharField(max_length=100,blank=False)
+    start_date = models.DateField(auto_now=False)
+    end_date = models.DateField(auto_now=False)
+
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name = 'Weeks'
+        verbose_name_plural = 'Weeks'
+
+class Todo(models.Model):
+    week = models.ForeignKey(WeekSet,on_delete=models.CASCADE)
+    date = models.DateField(auto_now=False,blank=True)
+    url = models.URLField(max_length=5000,blank=False)
+    name = models.CharField(max_length=1000,blank=False)
+    done = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name = 'TODOs'
+        verbose_name_plural = 'TODOs'

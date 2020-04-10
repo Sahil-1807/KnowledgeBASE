@@ -75,7 +75,7 @@
                 <!-- End of Header -->
 
                 <!-- Start of Search Wrapper -->
-                <div class="search-area-wrapper">
+                <!-- <div class="search-area-wrapper">
                         <div class="search-area container">
                                 <h3 class="search-header">Want to refresh some Questions?</h3>
                                 <p class="search-tag-line">You can search those questions here, think of those keywords in Question!</p>
@@ -86,7 +86,7 @@
                                         <div id="search-error-container"></div>
                                 </form>
                         </div>
-                </div>
+                </div> -->
                 <!-- End of Search Wrapper -->
 
                 <div class="page-container">
@@ -179,55 +179,11 @@
                                                             <p class="intro">{{problem.tip|linebreaksbr}}</p>
                                                     </div>
                                             </section>
-
-
-                                            <section class="widget">
-                                                    <h3 class="title">Featured Articles</h3>
-                                                    <ul class="articles">
-                                                            <li class="article-entry standard">
-                                                                    <h4><a href="http://html.inspirydemos.com/knowledgebase-html/single.html">Integrating WordPress with Your Website</a></h4>
-                                                                    <span class="article-meta">25 Feb, 2013 in <a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="View all posts in Server &amp; Database">Server &amp; Database</a></span>
-                                                                    <span class="like-count">66</span>
-                                                            </li>
-                                                            <li class="article-entry standard">
-                                                                    <h4><a href="http://html.inspirydemos.com/knowledgebase-html/single.html">WordPress Site Maintenance</a></h4>
-                                                                    <span class="article-meta">24 Feb, 2013 in <a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="View all posts in Website Dev">Website Dev</a></span>
-                                                                    <span class="like-count">15</span>
-                                                            </li>
-                                                            <li class="article-entry video">
-                                                                    <h4><a href="http://html.inspirydemos.com/knowledgebase-html/single.html">Meta Tags in WordPress</a></h4>
-                                                                    <span class="article-meta">23 Feb, 2013 in <a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="View all posts in Website Dev">Website Dev</a></span>
-                                                                    <span class="like-count">8</span>
-                                                            </li>
-                                                            <li class="article-entry image">
-                                                                    <h4><a href="http://html.inspirydemos.com/knowledgebase-html/single.html">WordPress in Your Language</a></h4>
-                                                                    <span class="article-meta">22 Feb, 2013 in <a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="View all posts in Advanced Techniques">Advanced Techniques</a></span>
-                                                                    <span class="like-count">6</span>
-                                                            </li>
-                                                    </ul>
-                                            </section>
-
-
-
                                             <section class="widget"><h3 class="title">Foreign Resources</h3>
                                                     <ul>
-                                                            <li><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="Lorem ipsum dolor sit amet,">Advanced Techniques</a> </li>
-                                                            <li><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="Lorem ipsum dolor sit amet,">Designing in WordPress</a></li>
-                                                            <li><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="Lorem ipsum dolor sit amet,">Server &amp; Database</a></li>
-                                                            <li><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="Lorem ipsum dolor sit amet, ">Theme Development</a></li>
-                                                            <li><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="Lorem ipsum dolor sit amet,">Website Dev</a></li>
-                                                            <li><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="Lorem ipsum dolor sit amet,">WordPress for Beginners</a></li>
-                                                            <li><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" title="Lorem ipsum dolor sit amet, ">WordPress Plugins</a></li>
-                                                    </ul>
-                                            </section>
-
-                                            <section class="widget">
-                                                    <h3 class="title">Recent Comments</h3>
-                                                    <ul id="recentcomments">
-                                                            <li class="recentcomments"><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" rel="external nofollow" class="url">John Doe</a> on <a href="http://html.inspirydemos.com/knowledgebase-html/single.html#">Integrating WordPress with Your Website</a></li>
-                                                            <li class="recentcomments">saqib sarwar on <a href="http://html.inspirydemos.com/knowledgebase-html/single.html#">Integrating WordPress with Your Website</a></li>
-                                                            <li class="recentcomments"><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" rel="external nofollow" class="url">John Doe</a> on <a href="http://html.inspirydemos.com/knowledgebase-html/single.html#">Integrating WordPress with Your Website</a></li>
-                                                            <li class="recentcomments"><a href="http://html.inspirydemos.com/knowledgebase-html/single.html#" rel="external nofollow" class="url">Mr WordPress</a> on <a href="http://html.inspirydemos.com/knowledgebase-html/single.html#">Installing WordPress</a></li>
+                                                            {%for data in foreign_resource%}
+                                                            <li><a href="{{data.link}}" title="" target="_blank">{{data.name}}</a></li>
+                                                            {%endfor%}
                                                     </ul>
                                             </section>
 
@@ -236,20 +192,6 @@
                             </div>
                     </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <!-- Footer Bottom -->
                 <div id="footer-bottom-wrapper">

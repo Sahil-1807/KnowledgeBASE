@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Category,Problem,SolutionCode,CommentData,Dates,ResourceTag
+from .models import Category,Problem,SolutionCode,CommentData,Dates,ResourceTag,ForeignResource
 from datetime import date
 # Create your views here.
 
@@ -12,7 +12,8 @@ def index(request):
     context = {
         'filters' : filter,
         'total': len(Problem.objects.all()),
-        'problems': Problem.objects.all(),
+        'old_problems': Problem.objects.all().order_by('date'),
+        'new_problems': Problem.objects.all().order_by('-date'),
         'days' : (placement_date.date-today_date).days,
         'tags' : ResourceTag.objects.all()
     }
@@ -55,5 +56,6 @@ def detail(request,id):
     return render(request,'Code/detail.html',{
         'problem':problem,
         'solution':solution,
-        'comments':comments
+        'comments':comments,
+        'foreign_resource':ForeignResource.objects.all().filter(problem=problem)
         })
