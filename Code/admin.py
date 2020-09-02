@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Category,Problem,ForeignResource,LanguageCategory,SolutionCode,CommentData,Dates,ResourceTag
 from django.contrib.auth.models import User,Group
-from .models import ResourcesList,WeekSet,Todo
+from .models import ResourcesList,WeekSet,Todo,ToDoLevel
 # Register your models here.
 
 
@@ -9,7 +9,8 @@ class WeekSetAdmin(admin.ModelAdmin):
     list_display = ('name','start_date','end_date',)
 
 class TodoAdmin(admin.ModelAdmin):
-    list_display = ('name','url','done')
+    list_display = ('week','level','name','date','url','done')
+    list_filter = ('week','level','date','done')
 
 
 class InlineForeignResource(admin.TabularInline):
@@ -36,3 +37,4 @@ admin.site.register(Problem,ProblemAdmin)
 admin.site.register(ResourcesList)
 admin.site.register(WeekSet,WeekSetAdmin)
 admin.site.register(Todo,TodoAdmin)
+admin.site.register(ToDoLevel)

@@ -109,9 +109,20 @@ class WeekSet(models.Model):
         verbose_name = 'Weeks'
         verbose_name_plural = 'Weeks'
 
+class ToDoLevel(models.Model):
+    level = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.level
+    
+    class Meta:
+        verbose_name = 'ToDo Level'
+        verbose_name_plural = 'ToDo Level'
+
 class Todo(models.Model):
     week = models.ForeignKey(WeekSet,on_delete=models.CASCADE)
     date = models.DateField(auto_now=False,blank=True)
+    level = models.ForeignKey(ToDoLevel,on_delete=models.CASCADE)
     url = models.URLField(max_length=5000,blank=False)
     name = models.CharField(max_length=1000,blank=False)
     done = models.BooleanField(default=False)

@@ -20,6 +20,8 @@
                 <link rel="stylesheet" id="main-css-css" href="{% static 'Code/main.css'%}" type="text/css" media="all">
                 <link rel="stylesheet" id="blue-skin-css" href="{% static 'Code/blue-skin.css'%}" type="text/css" media="all">
                 <link rel="stylesheet" id="custom-css-css" href="{% static 'Code/custom.css'%}" type="text/css" media="all">
+                <script type="text/javascript" src="syntaxhighlighter.js"></script>
+                <link rel="" href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushCpp.min.js">
 
         <script type="text/javascript" src="{% static 'Code/353252568291504128'%}"></script></head>
 
@@ -117,7 +119,7 @@
                                                     
                                                     <h3>Code</h3>
                                                     <p>Labguage- {{solution.language}}</p>
-                                                    <pre><code>{{solution.code|linebreaksbr}}</code></pre>
+                                                    <pre class="brush: js"><code>{{solution.code|linebreaksbr}}</code></pre>
                                             <section id="comments">
 
                                                     <h3 id="comments-title">Comments</h3>
@@ -227,3 +229,9 @@
 
 
 <div id="jquery-live-search" style="display: none;"></div></body></html>
+
+<pre class="brush: js">
+function foo()
+{
+}
+</pre>
